@@ -1,0 +1,1 @@
+// 🔧 Cole aqui o conteúdo do painel do gestor (canvas)
