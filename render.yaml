@@ -1,6 +1,8 @@
 services:
   - type: web
-    name: ethosus-backend
-    env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    name: ethosus-frontend
+    env: static
+    buildCommand: npm run build
+    staticPublishPath: dist
+    branch: main
+    autoDeploy: true
